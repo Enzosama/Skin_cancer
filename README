@@ -1,99 +1,69 @@
-# SKIN_CANCER
+# AI Image Prediction Flask Application
 
-*Empowering early detection for healthier skin futures.*
+This Flask application provides a web interface for users to upload images and receive AI predictions about the content of those images. It also includes a chatbot feature that users can interact with for help.
 
-<!-- Optional: Add actual badges here if you have the URLs -->
-[![Last Commit](https://img.shields.io/github/last-commit/Enzosama/Skin_cancer?label=last%20commit&style=flat-square)](https://github.com/Enzosama/Skin_cancer/commits/main)
-[![HTML %](https://img.shields.io/github/languages/top/Enzosama/Skin_cancer?style=flat-square)](https://github.com/Enzosama/Skin_cancer)
-[![Languages](https://img.shields.io/github/languages/count/Enzosama/Skin_cancer?style=flat-square)](https://github.com/Enzosama/Skin_cancer)
-<!-- Add more specific badges if desired -->
+## Features
 
-***
+- Image upload via drag-and-drop or file browser
+- AI prediction results displayed as a list
+- Chatbot assistance via a popup interface
+- Clean, responsive UI design
 
-*Built with the tools and technologies:*
+## Requirements
 
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![tqdm](https://img.shields.io/badge/tqdm-FFC107?style=flat-square&logo=tqdm&logoColor=black)
-![Babel](https://img.shields.io/badge/Babel-F9DC3E?style=flat-square&logo=babel&logoColor=black)
-![Rich](https://img.shields.io/badge/Rich-FFC107?style=flat-square&logo=rich&logoColor=black) <!-- Assuming Rich library -->
-![SymPy](https://img.shields.io/badge/SymPy-3B5F8A?style=flat-square&logo=sympy&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![AIOHTTP](https://img.shields.io/badge/AIOHTTP-2C5BB4?style=flat-square&logo=aiohttp&logoColor=white)
-![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![Lightning](https://img.shields.io/badge/Lightning-792EEA?style=flat-square&logo=pytorch-lightning&logoColor=white) <!-- Assuming PyTorch Lightning -->
-![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
+- Python 3.10+
+- Flask
+- Werkzeug
 
-***
+## Installation
 
-## Table of Contents
+1. Clone this repository:
+```
+git clone https://github.com/yourusername/ai-image-prediction.git
+cd Skin_cancer
+```
 
--   [Overview](#overview)
--   [Getting Started](#getting-started)
-    -   [Prerequisites](#prerequisites)
-    -   [Installation](#installation)
-    *   [Usage](#usage)
-    *   [Testing](#testing)
+2. Create a virtual environment (recommended):
+```
+python -m venv venv
+```
 
-***
+3. Activate the virtual environment:
+   - On Windows:
+   ```
+   venv\Scripts\activate
+   ```
+   - On macOS/Linux:
+   ```
+   source venv/bin/activate
+   ```
 
-## Overview
+4. Install the required dependencies:
+```
+pip install flask
+```
 
-Skin_cancer is an innovative web application designed to empower users with AI-driven dermatological insights. This project aims to simplify skin lesion analysis through a user-friendly interface, making advanced healthcare solutions accessible to everyone.
+## Project Structure
 
-### Why Skin_cancer?
+```
+ai-image-prediction/
+├── app.py                  # Flask application
+├── static/                 # Static files
+│   └── uploads/            # Uploaded images folder
+│   └── model               # Model segmentation
+└── templates/              # HTML templates
+    └── index.html          # Main application template
+```
 
-This project leverages cutting-edge AI technology to provide accurate skin lesion predictions while ensuring a seamless user experience. The core features include:
+## Running the Application
 
--   🖼️ **Image Upload and Analysis:** Simplifies the process of submitting images for dermatological predictions.
--   💬 **Chatbot Assistance:** Enhances user interaction by answering queries about the model's capabilities.
--   📊 **Pre-trained AI Model:** Offers accurate skin lesion classification without the need for extensive model training.
--   🌐 **Web Application Framework (Flask):** Provides a robust backend for seamless integration and deployment.
--   🎨 **User-friendly Interface:** Ensures accessibility and ease of use for all users seeking medical insights.
+1. Ensure your virtual environment is activated
+2. Run the Flask application:
+```
+python app.py
+```
+3. Open your web browser and go to http://127.0.0.1:5000/
 
-***
+## License
 
-## Getting Started
-
-### Prerequisites
-
-This project requires the following dependencies:
-
--   **Programming Language:** Python
--   **Package Manager:** Pip
-
-### Installation
-
-Build Skin_cancer from the source and install dependencies:
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/Enzosama/Skin_cancer
-    ```
-
-2.  **Navigate to the project directory:**
-    ```bash
-    cd Skin_cancer
-    ```
-
-3.  **Install the dependencies:**
-
-    Using **pip**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-### Usage
-
-Run the project with:
-
-Using **python**:
-```bash
-# Replace {entrypoint} with the actual main script (e.g., app.py, main.py)
-python {entrypoint}
+[Your License Here]
