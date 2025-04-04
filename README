@@ -19,7 +19,7 @@ This Flask application provides a web interface for users to upload images and r
 
 1. Clone this repository:
 ```
-git clone https://github.com/yourusername/ai-image-prediction.git
+git clone https://github.com/Enzosama/Skin_cancer.git
 cd Skin_cancer
 ```
 
