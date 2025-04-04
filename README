@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKIN_CANCER</title>
     <style>
@@ -188,7 +187,7 @@
         </li>
         <li>
             <p>Install the dependencies:</p>
-            <p>Using <a href="#pip">pip</a>:</p>
+            <p>Using pip:</p>
             <pre><code>pip install -r requirements.txt</code></pre>
         </li>
     </ol>
@@ -196,15 +195,15 @@
     <h2 id="usage">Usage</h2>
     <p>Run the project with:</p>
     
-    <p>Using <a href="#pip">pip</a>:</p>
-    <pre><code>python {entrypoint}</code></pre>
+    <p>Using pip:</p>
+    <pre><code>python app.py</code></pre>
     
     <h2 id="testing">Testing</h2>
-    <p>Skin_cancer uses the {test_framework} test framework. Run the test suite with:</p>
+    <p>Skin_cancer uses the pytest test framework. Run the test suite with:</p>
     
-    <p>Using <a href="#pip">pip</a>:</p>
+    <p>Using pip:</p>
     <pre><code>pytest</code></pre>
     
-    <p><a href="#" class="return-link">⬆️ Return</a></p>
+    <a href="#" class="return-link">⬆️ Return</a>
 </body>
 </html>
