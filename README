@@ -1,209 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKIN_CANCER</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #111;
-        }
-        a {
-            color: #0366d6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .badge {
-            display: inline-block;
-            padding: 4px 8px;
-            margin-right: 5px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: bold;
-            color: white;
-        }
-        .tech-badge {
-            display: inline-block;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 4px;
-            font-size: 14px;
-            color: white;
-        }
-        .flask { background-color: #000; }
-        .markdown { background-color: #083B70; }
-        .keras { background-color: #D00000; }
-        .tensorflow { background-color: #FF6F00; }
-        .scikit { background-color: #F89939; }
-        .tqdm { background-color: #FFC107; }
-        .babel { background-color: #F5DB53; color: #333; }
-        .rich { background-color: #4CAF50; }
-        .sympy { background-color: #3B5526; }
-        .fastapi { background-color: #009688; }
-        .numpy { background-color: #013243; }
-        .python { background-color: #3776AB; }
-        .aiohttp { background-color: #2C5BB4; }
-        .scipy { background-color: #8CAAE6; }
-        .pandas { background-color: #150458; }
-        .lightning { background-color: #792EE5; }
-        .pydantic { background-color: #E92063; }
-        
-        .badge-html { background-color: #E34C26; }
-        .badge-languages { background-color: #0366d6; }
-        
-        .commit { background-color: #6a737d; }
-        
-        code {
-            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
-            background-color: #f6f8fa;
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-size: 14px;
-        }
-        pre {
-            background-color: #1e1e1e;
-            color: #f8f8f2;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-        pre code {
-            background-color: transparent;
-            color: #f8f8f2;
-            padding: 0;
-        }
-        .feature-list {
-            list-style-type: none;
-            padding-left: 10px;
-        }
-        .feature-list li {
-            margin-bottom: 15px;
-            position: relative;
-            padding-left: 28px;
-        }
-        .emoji {
-            position: absolute;
-            left: 0;
-            top: 2px;
-        }
-        .return-link {
-            margin-top: 20px;
-            display: inline-block;
-        }
-        hr {
-            border: 0;
-            height: 1px;
-            background-color: #e1e4e8;
-            margin: 30px 0;
-        }
-    </style>
-</head>
-<body>
-    <h1>SKIN_CANCER</h1>
-    <p><em>Empowering early detection for healthier skin futures.</em></p>
-    <h2>Built with the tools and technologies:</h2>
-    <div>
-        <span class="tech-badge flask">Flask</span>
-        <span class="tech-badge markdown">Markdown</span>
-        <span class="tech-badge keras">Keras</span>
-        <span class="tech-badge tensorflow">TensorFlow</span>
-        <span class="tech-badge scikit">scikit-learn</span>
-        <span class="tech-badge tqdm">tqdm</span>
-        <span class="tech-badge babel">Babel</span>
-        <span class="tech-badge rich">Rich</span>
-        <span class="tech-badge sympy">SymPy</span>
-        <span class="tech-badge fastapi">FastAPI</span>
-        <span class="tech-badge numpy">NumPy</span>
-        <span class="tech-badge python">Python</span>
-        <span class="tech-badge aiohttp">AIOHTTP</span>
-        <span class="tech-badge scipy">SciPy</span>
-        <span class="tech-badge pandas">pandas</span>
-        <span class="tech-badge lightning">Lightning</span>
-        <span class="tech-badge pydantic">Pydantic</span>
-    </div>
-    
-    <hr>
-    
-    <h1>Table of Contents</h1>
-    <ul>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#getting-started">Getting Started</a>
-            <ul>
-                <li><a href="#prerequisites">Prerequisites</a></li>
-                <li><a href="#installation">Installation</a></li>
-                <li><a href="#usage">Usage</a></li>
-                <li><a href="#testing">Testing</a></li>
-            </ul>
-        </li>
-    </ul>
-    
-    <hr>
-    
-    <h1 id="overview">Overview</h1>
-    <p>Skin_cancer is an innovative web application designed to empower users with AI-driven dermatological insights. This project aims to simplify skin lesion analysis through a user-friendly interface, making advanced healthcare solutions accessible to everyone.</p>
-    
-    <h2>Why Skin_cancer?</h2>
-    <p>This project leverages cutting-edge AI technology to provide accurate skin lesion predictions while ensuring a seamless user experience. The core features include:</p>
-    
-    <ul class="feature-list">
-        <li><span class="emoji">🖼️</span> <strong>Image Upload and Analysis:</strong> Simplifies the process of submitting images for dermatological predictions.</li>
-        <li><span class="emoji">🤖</span> <strong>Chatbot Assistance:</strong> Enhances user interaction by answering queries about the model's capabilities.</li>
-        <li><span class="emoji">📊</span> <strong>Pre-trained AI Model:</strong> Offers accurate skin lesion classification without the need for extensive model training.</li>
-        <li><span class="emoji">🌐</span> <strong>Web Application Framework (Flask):</strong> Provides a robust backend for seamless integration and deployment.</li>
-        <li><span class="emoji">👥</span> <strong>User-friendly Interface:</strong> Ensures accessibility and ease of use for all users seeking medical insights.</li>
-    </ul>
-    
-    <hr>
-    
-    <h1 id="getting-started">Getting Started</h1>
-    
-    <h2 id="prerequisites">Prerequisites</h2>
-    <p>This project requires the following dependencies:</p>
-    <ul>
-        <li><strong>Programming Language:</strong> Python</li>
-        <li><strong>Package Manager:</strong> Pip</li>
-    </ul>
-    
-    <h2 id="installation">Installation</h2>
-    <p>Build Skin_cancer from the source and install dependencies:</p>
-    
-    <ol>
-        <li>
-            <p>Clone the repository:</p>
-            <pre><code>git clone https://github.com/Enzosama/Skin_cancer</code></pre>
-        </li>
-        <li>
-            <p>Navigate to the project directory:</p>
-            <pre><code>cd Skin_cancer</code></pre>
-        </li>
-        <li>
-            <p>Install the dependencies:</p>
-            <p>Using pip:</p>
-            <pre><code>pip install -r requirements.txt</code></pre>
-        </li>
-    </ol>
-    
-    <h2 id="usage">Usage</h2>
-    <p>Run the project with:</p>
-    
-    <p>Using pip:</p>
-    <pre><code>python app.py</code></pre>
-    
-    <h2 id="testing">Testing</h2>
-    <p>Skin_cancer uses the pytest test framework. Run the test suite with:</p>
-    
-    <p>Using pip:</p>
-    <pre><code>pytest</code></pre>
-    
-    <a href="#" class="return-link">⬆️ Return</a>
-</body>
-</html>
+# SKIN_CANCER
+
+*Empowering early detection for healthier skin futures.*
+
+## Tech Stack
+
+- **Web Framework**: Flask, FastAPI
+- **Machine Learning**: TensorFlow, Keras, scikit-learn
+- **Data Processing**: NumPy, pandas, SciPy
+- **Additional Tools**: tqdm, Markdown, Babel, Rich, SymPy, AIOHTTP, Lightning, Pydantic
+
+## Table of Contents
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Testing](#testing)
+
+## Overview
+
+Skin_cancer is an innovative web application designed to empower users with AI-driven dermatological insights. This project aims to simplify skin lesion analysis through a user-friendly interface, making advanced healthcare solutions accessible to everyone.
+
+### Why Skin_cancer?
+
+This project leverages cutting-edge AI technology to provide accurate skin lesion predictions while ensuring a seamless user experience. The core features include:
+
+- 🖼️ **Image Upload and Analysis**: Simplifies the process of submitting images for dermatological predictions.
+- 🤖 **Chatbot Assistance**: Enhances user interaction by answering queries about the model's capabilities.
+- 📊 **Pre-trained AI Model**: Offers accurate skin lesion classification without the need for extensive model training.
+- 🌐 **Web Application Framework (Flask)**: Provides a robust backend for seamless integration and deployment.
+- 👥 **User-friendly Interface**: Ensures accessibility and ease of use for all users seeking medical insights.
+
+## Getting Started
+
+### Prerequisites
+
+This project requires the following dependencies:
+- **Programming Language**: Python
+- **Package Manager**: Pip
+
+### Installation
+
+Build Skin_cancer from the source and install dependencies:
+
+1. Clone the repository:
